@@ -1,0 +1,101 @@
+/* ==================================
+   1. 【重中之重】首页卡片强制修复
+   (直接选中 class，不再依赖父级 ID，防止失效)
+================================== */
+.recent-post-item {
+    /* 使用 background 简写属性，覆盖力更强 */
+    background: rgba(74, 132, 235, 0.4) !important;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+/* ==================================
+   2. 其他页面的背景 (文章页、侧边栏等)
+================================== */
+#post,
+#aside-content .card-widget,
+#page,
+#archive,
+#tag,
+#category,
+.layout>.recent-posts .pagination>.page-number,
+.layout>.recent-posts .pagination>.extend {
+    background: rgba(74, 132, 235, 0.4) !important;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+/* ==================================
+   3. 全局文字变白 (保持现状)
+================================== */
+body {
+    color: #ffffff !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffffff !important;
+}
+
+a {
+    color: #ffffff !important;
+}
+
+a:hover {
+    color: #aaddff !important;
+}
+
+/* 强制文章摘要和元信息变白 */
+.article-title,
+.article-meta-wrap,
+.article-content,
+.recent-post-info .content {
+    color: #ffffff !important;
+}
+
+/* 侧边栏和日期 */
+.card-widget .item-headline,
+.card-widget .card-content,
+.card-info-data * {
+    color: #ffffff !important;
+}
+
+/* 修复文章内的代码块背景，防止太亮刺眼 (可选) */
+/* 如果你需要代码块变深色，可以把下面注释去掉 */
+/* .highlight {
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+*/
+/* ==================================
+   5. 【只改底部】让底部 Footer 变透明
+================================== */
+#footer {
+    /* 变成透明，显示后面的大背景图 */
+    background: transparent !important;
+}
+
+/* 确保底部的字和链接也是白色的（防止看不清） */
+#footer-wrap,
+#footer-wrap a {
+    color: #ffffff !important;
+}
+
+/* ==================================
+   6. 首页标题和打字机颜色修改
+================================== */
+
+/* 1. 修改打字机（副标题）的颜色 */
+#site-subtitle {
+    /* 这里填你想要的颜色代码，比如浅蓝色 #aaddff，或者金黄色 #ffd700 */
+    color: #aaddff !important;
+
+    /* 选填：加一点文字阴影，让字在亮背景上也看得清 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+    /* 选填：如果你想字体加粗，把下面这行的注释去掉 */
+    /* font-weight: bold; */
+}
