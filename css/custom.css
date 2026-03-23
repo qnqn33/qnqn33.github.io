@@ -99,3 +99,15 @@ a:hover {
     /* 选填：如果你想字体加粗，把下面这行的注释去掉 */
     /* font-weight: bold; */
 }
+
+#article-container {
+  font-size: 20px;
+}
+
+#article-container code {
+  font-size: 20px;
+}
+
+.recent-post-item .article-title {
+  font-size: 24px;
+}
