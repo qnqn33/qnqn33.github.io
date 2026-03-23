@@ -109,5 +109,22 @@ a:hover {
 }
 
 .recent-post-item .article-title {
-  font-size: 24px;
+  font-size: 24px !important;
+}
+
+.recent-post-item {
+  height: auto !important;
+  min-height: unset !important;
+  padding: 50px 20px !important;
+}
+
+.recent-post-item .post_cover {
+  width: 300px !important;
+  flex-shrink: 0 !important;
+}
+
+.recent-post-item .post_cover img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
 }
